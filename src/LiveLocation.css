@@ -1,0 +1,122 @@
+/* LiveLocation.css */
+
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.live-location-content {
+  padding: 16px;
+}
+
+/* Card Styles */
+.location-card,
+.distance-card {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.location-card .loading-container,
+.distance-card .loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Typography */
+.location-details p,
+.distance-card p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #333;
+}
+
+.location-details strong {
+  color: #007aff;
+}
+
+/* Buttons */
+.get-location-button {
+  /* background-color: red; */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 16px 0;
+  border-radius: 8px;
+}
+
+.get-location-button:hover {
+  /* background-color: #005bb5; */
+}
+
+/* Icons */
+.share-icon,
+.map-icon {
+  font-size: 24px;
+  color: #007aff;
+  cursor: pointer;
+}
+
+.map-icon {
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.map-icon:hover {
+  color: #005bb5;
+}
+
+/* Click Info Styling */
+.click-info {
+  display: inline-block;
+  font-size: 14px;
+  color: #555;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.click-info:hover {
+  color: #007aff;
+}
+
+/* Toast */
+.toast-message {
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .location-card,
+  .distance-card {
+    margin: 0 10px 20px;
+    padding: 10px;
+  }
+
+  .location-details p,
+  .distance-card p {
+    font-size: 14px;
+  }
+
+  .get-location-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .map-icon {
+    font-size: 20px;
+  }
+
+  .click-info {
+    font-size: 12px;
+  }
+}
